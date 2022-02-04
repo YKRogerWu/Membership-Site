@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h2>Sign Up for the Membership</h2>
+    <form action="/signup" method="post"> <!--引導至signup路由-->
+        <div class="username">
+            <div>Full Name</div>
+            <input type="text" name="name"/>
+        </div>
+        <div class="email">
+            <div>Email(username)</div>
+            <input type="email" name="email"/>
+        </div>
+        <div class="password">
+            <div>Password</div>
+            <input type="password" name="password"/>
+        </div>
+        <button type="reset">reset</button>
+        <button type="submit">Register</button>
+    </form>
+
+    <h2>Have an account? Sign in here!</h2>
+    <form action="/signin" method="post">
+        <div class="email">
+            <div>Email(username)</div>
+            <input type="email" name="email"/>
+        </div>
+        <div class="password">
+            <div>Password</div>
+            <input type="password" name="password"/>            
+        </div>
+        <button type="submit">Log in</button>
+    </form>
+</body>
+</html>
